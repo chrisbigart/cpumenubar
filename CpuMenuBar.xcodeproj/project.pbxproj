@@ -1,0 +1,402 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 47;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		A21862A21BCDEA2E00770E87 /* PreferencesWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = A21862A01BCDEA2E00770E87 /* PreferencesWindow.swift */; };
+		A21862A31BCDEA2E00770E87 /* PreferencesWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = A21862A11BCDEA2E00770E87 /* PreferencesWindow.xib */; };
+		A2B4247D1BCDE3D300887CB2 /* ResourceUsageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2B4247C1BCDE3D300887CB2 /* ResourceUsageView.swift */; };
+		A2D582281BCAAF37006A464B /* StatusMenuController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2D582271BCAAF37006A464B /* StatusMenuController.swift */; };
+		A2DEB14E1BC9980E004AAEB3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A2DEB14D1BC9980E004AAEB3 /* AppDelegate.swift */; };
+		A2DEB1501BC9980E004AAEB3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A2DEB14F1BC9980E004AAEB3 /* Assets.xcassets */; };
+		A2DEB1531BC9980E004AAEB3 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = A2DEB1511BC9980E004AAEB3 /* MainMenu.xib */; };
+		DD1C1B062047E6A700500F31 /* CpuUsage.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C1B052047E6A700500F31 /* CpuUsage.swift */; };
+		DD1C1B082047E8F500500F31 /* CPU.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C1B072047E8F500500F31 /* CPU.swift */; };
+		DD1C1B0A2047EA3D00500F31 /* System.swift in Sources */ = {isa = PBXBuildFile; fileRef = DD1C1B092047EA3D00500F31 /* System.swift */; };
+		DD78B33C207AF8570038300C /* icon.icns in Resources */ = {isa = PBXBuildFile; fileRef = DD78B33B207AF8570038300C /* icon.icns */; };
+		DD9C269620703E5E00144E2F /* macos_toggle_button_on.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9C269120703E5D00144E2F /* macos_toggle_button_on.png */; };
+		DD9C269720703E5E00144E2F /* macos_toggle_button_off.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9C269220703E5D00144E2F /* macos_toggle_button_off.png */; };
+		DD9C269920703E5E00144E2F /* cpu_outline.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9C269420703E5E00144E2F /* cpu_outline.png */; };
+		DD9C269A20703E5E00144E2F /* memory_outline.png in Resources */ = {isa = PBXBuildFile; fileRef = DD9C269520703E5E00144E2F /* memory_outline.png */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A21862A01BCDEA2E00770E87 /* PreferencesWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PreferencesWindow.swift; sourceTree = "<group>"; };
+		A21862A11BCDEA2E00770E87 /* PreferencesWindow.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PreferencesWindow.xib; sourceTree = "<group>"; };
+		A2B4247C1BCDE3D300887CB2 /* ResourceUsageView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ResourceUsageView.swift; sourceTree = "<group>"; };
+		A2D582271BCAAF37006A464B /* StatusMenuController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StatusMenuController.swift; sourceTree = "<group>"; };
+		A2DEB14A1BC9980E004AAEB3 /* CpuMenuBar.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CpuMenuBar.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A2DEB14D1BC9980E004AAEB3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		A2DEB14F1BC9980E004AAEB3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A2DEB1521BC9980E004AAEB3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		A2DEB1541BC9980E004AAEB3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DD1C1B052047E6A700500F31 /* CpuUsage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CpuUsage.swift; sourceTree = "<group>"; };
+		DD1C1B072047E8F500500F31 /* CPU.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPU.swift; sourceTree = "<group>"; };
+		DD1C1B092047EA3D00500F31 /* System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = System.swift; sourceTree = "<group>"; };
+		DD78B33B207AF8570038300C /* icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; name = icon.icns; path = icons/icon.icns; sourceTree = "<group>"; };
+		DD9C269020701BF200144E2F /* CpuBar.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CpuBar.entitlements; sourceTree = "<group>"; };
+		DD9C269120703E5D00144E2F /* macos_toggle_button_on.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macos_toggle_button_on.png; sourceTree = "<group>"; };
+		DD9C269220703E5D00144E2F /* macos_toggle_button_off.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = macos_toggle_button_off.png; sourceTree = "<group>"; };
+		DD9C269420703E5E00144E2F /* cpu_outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cpu_outline.png; sourceTree = "<group>"; };
+		DD9C269520703E5E00144E2F /* memory_outline.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = memory_outline.png; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A2DEB1471BC9980E004AAEB3 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A2DEB1411BC9980E004AAEB3 = {
+			isa = PBXGroup;
+			children = (
+				DDACFE91206AACD1005F9BE6 /* Resources */,
+				A2DEB14C1BC9980E004AAEB3 /* CpuBar */,
+				A2DEB14B1BC9980E004AAEB3 /* Products */,
+			);
+			sourceTree = "<group>";
+			wrapsLines = 0;
+		};
+		A2DEB14B1BC9980E004AAEB3 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A2DEB14A1BC9980E004AAEB3 /* CpuMenuBar.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A2DEB14C1BC9980E004AAEB3 /* CpuBar */ = {
+			isa = PBXGroup;
+			children = (
+				DD9C269020701BF200144E2F /* CpuBar.entitlements */,
+				A2DEB1541BC9980E004AAEB3 /* Info.plist */,
+				DDACFE95206AAD0E005F9BE6 /* res */,
+				DDACFE94206AAD08005F9BE6 /* src */,
+			);
+			path = CpuBar;
+			sourceTree = "<group>";
+		};
+		DDACFE91206AACD1005F9BE6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DD78B33B207AF8570038300C /* icon.icns */,
+				DD9C269420703E5E00144E2F /* cpu_outline.png */,
+				DD9C269220703E5D00144E2F /* macos_toggle_button_off.png */,
+				DD9C269120703E5D00144E2F /* macos_toggle_button_on.png */,
+				DD9C269520703E5E00144E2F /* memory_outline.png */,
+				A2DEB14F1BC9980E004AAEB3 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		DDACFE94206AAD08005F9BE6 /* src */ = {
+			isa = PBXGroup;
+			children = (
+				DDACFE96206AAD1D005F9BE6 /* cpu_usage */,
+				A2DEB14D1BC9980E004AAEB3 /* AppDelegate.swift */,
+				A2D582271BCAAF37006A464B /* StatusMenuController.swift */,
+				A2B4247C1BCDE3D300887CB2 /* ResourceUsageView.swift */,
+				A21862A01BCDEA2E00770E87 /* PreferencesWindow.swift */,
+			);
+			path = src;
+			sourceTree = "<group>";
+		};
+		DDACFE95206AAD0E005F9BE6 /* res */ = {
+			isa = PBXGroup;
+			children = (
+				A2DEB1511BC9980E004AAEB3 /* MainMenu.xib */,
+				A21862A11BCDEA2E00770E87 /* PreferencesWindow.xib */,
+			);
+			path = res;
+			sourceTree = "<group>";
+		};
+		DDACFE96206AAD1D005F9BE6 /* cpu_usage */ = {
+			isa = PBXGroup;
+			children = (
+				DD1C1B052047E6A700500F31 /* CpuUsage.swift */,
+				DD1C1B072047E8F500500F31 /* CPU.swift */,
+				DD1C1B092047EA3D00500F31 /* System.swift */,
+			);
+			path = cpu_usage;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A2DEB1491BC9980E004AAEB3 /* CpuMenuBar */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A2DEB16D1BC9980E004AAEB3 /* Build configuration list for PBXNativeTarget "CpuMenuBar" */;
+			buildPhases = (
+				A2DEB1461BC9980E004AAEB3 /* Sources */,
+				A2DEB1471BC9980E004AAEB3 /* Frameworks */,
+				A2DEB1481BC9980E004AAEB3 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = CpuMenuBar;
+			productName = WeatherBar;
+			productReference = A2DEB14A1BC9980E004AAEB3 /* CpuMenuBar.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A2DEB1421BC9980E004AAEB3 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0930;
+				ORGANIZATIONNAME = "BigArt Games";
+				TargetAttributes = {
+					A2DEB1491BC9980E004AAEB3 = {
+						CreatedOnToolsVersion = 7.0.1;
+						DevelopmentTeam = VG88K3PDF4;
+						LastSwiftMigration = 0920;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Sandbox = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = A2DEB1451BC9980E004AAEB3 /* Build configuration list for PBXProject "CpuMenuBar" */;
+			compatibilityVersion = "Xcode 6.3";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = A2DEB1411BC9980E004AAEB3;
+			productRefGroup = A2DEB14B1BC9980E004AAEB3 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				A2DEB1491BC9980E004AAEB3 /* CpuMenuBar */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A2DEB1481BC9980E004AAEB3 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A2DEB1501BC9980E004AAEB3 /* Assets.xcassets in Resources */,
+				DD9C269A20703E5E00144E2F /* memory_outline.png in Resources */,
+				DD9C269620703E5E00144E2F /* macos_toggle_button_on.png in Resources */,
+				A21862A31BCDEA2E00770E87 /* PreferencesWindow.xib in Resources */,
+				DD78B33C207AF8570038300C /* icon.icns in Resources */,
+				A2DEB1531BC9980E004AAEB3 /* MainMenu.xib in Resources */,
+				DD9C269920703E5E00144E2F /* cpu_outline.png in Resources */,
+				DD9C269720703E5E00144E2F /* macos_toggle_button_off.png in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A2DEB1461BC9980E004AAEB3 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A21862A21BCDEA2E00770E87 /* PreferencesWindow.swift in Sources */,
+				DD1C1B082047E8F500500F31 /* CPU.swift in Sources */,
+				DD1C1B062047E6A700500F31 /* CpuUsage.swift in Sources */,
+				DD1C1B0A2047EA3D00500F31 /* System.swift in Sources */,
+				A2D582281BCAAF37006A464B /* StatusMenuController.swift in Sources */,
+				A2DEB14E1BC9980E004AAEB3 /* AppDelegate.swift in Sources */,
+				A2B4247D1BCDE3D300887CB2 /* ResourceUsageView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		A2DEB1511BC9980E004AAEB3 /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				A2DEB1521BC9980E004AAEB3 /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		A2DEB16B1BC9980E004AAEB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		A2DEB16C1BC9980E004AAEB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+			};
+			name = Release;
+		};
+		A2DEB16E1BC9980E004AAEB3 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CpuBar/CpuBar.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VG88K3PDF4;
+				INFOPLIST_FILE = "$(SRCROOT)/CpuBar/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chrisbigart.cpu-bar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Debug;
+		};
+		A2DEB16F1BC9980E004AAEB3 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = CpuBar/CpuBar.entitlements;
+				CODE_SIGN_IDENTITY = "Mac Developer";
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_TEAM = VG88K3PDF4;
+				INFOPLIST_FILE = "$(SRCROOT)/CpuBar/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.chrisbigart.cpu-bar";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A2DEB1451BC9980E004AAEB3 /* Build configuration list for PBXProject "CpuMenuBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2DEB16B1BC9980E004AAEB3 /* Debug */,
+				A2DEB16C1BC9980E004AAEB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A2DEB16D1BC9980E004AAEB3 /* Build configuration list for PBXNativeTarget "CpuMenuBar" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2DEB16E1BC9980E004AAEB3 /* Debug */,
+				A2DEB16F1BC9980E004AAEB3 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A2DEB1421BC9980E004AAEB3 /* Project object */;
+}

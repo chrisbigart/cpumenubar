@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.Cocoa.XIB" version="3.0" toolsVersion="14109" targetRuntime="MacOSX.Cocoa" propertyAccessControl="none" useAutolayout="YES">
+    <dependencies>
+        <deployment identifier="macosx"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.CocoaPlugin" version="14109"/>
+        <capability name="box content view" minToolsVersion="7.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <customObject id="-2" userLabel="File's Owner" customClass="PreferencesWindow" customModule="CpuBar" customModuleProvider="target">
+            <connections>
+                <outlet property="activeMemoryColorWell" destination="ehb-qY-MpA" id="1Vi-hx-eve"/>
+                <outlet property="compressedMemoryColorWell" destination="KsO-lY-PdJ" id="ZIg-Uq-pBX"/>
+                <outlet property="cpuUsageColorWell" destination="Asd-MC-5LL" id="Zf8-d2-WD3"/>
+                <outlet property="showStatusOutlineCheckbox" destination="Pxk-IT-PMT" id="Dt8-i6-7x4"/>
+                <outlet property="updateFrequencyLabel" destination="JAK-Zm-7xr" id="Zb0-YB-CcP"/>
+                <outlet property="updateFrequencySlider" destination="HtN-0k-1pj" id="h00-ld-8bg"/>
+                <outlet property="window" destination="F0z-JX-Cv5" id="gIp-Ho-8D9"/>
+                <outlet property="wiredMemoryColorWell" destination="1wb-Jw-xh4" id="nm1-ej-SKv"/>
+            </connections>
+        </customObject>
+        <customObject id="-1" userLabel="First Responder" customClass="FirstResponder"/>
+        <customObject id="-3" userLabel="Application" customClass="NSObject"/>
+        <window title="Preferences" allowsToolTipsWhenApplicationIsInactive="NO" autorecalculatesKeyViewLoop="NO" oneShot="NO" releasedWhenClosed="NO" showsToolbarButton="NO" animationBehavior="default" id="F0z-JX-Cv5">
+            <windowStyleMask key="styleMask" titled="YES" closable="YES"/>
+            <rect key="contentRect" x="196" y="240" width="324" height="322"/>
+            <rect key="screenRect" x="0.0" y="0.0" width="1440" height="877"/>
+            <view key="contentView" id="se5-gp-TjO">
+                <rect key="frame" x="0.0" y="0.0" width="324" height="322"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <slider verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="HtN-0k-1pj">
+                        <rect key="frame" x="20" y="255" width="284" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <sliderCell key="cell" controlSize="small" continuous="YES" state="on" alignment="left" minValue="0.25" maxValue="5" doubleValue="1" tickMarkPosition="below" numberOfTickMarks="20" allowsTickMarkValuesOnly="YES" sliderType="linear" id="tRQ-uN-U0L"/>
+                        <connections>
+                            <action selector="frequencySliderChanged:" target="-2" id="ybK-HA-tMH"/>
+                        </connections>
+                    </slider>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oaq-Lh-EWg">
+                        <rect key="frame" x="18" y="285" width="117" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Update frequency:" id="Wf1-Ma-1nk">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Tda-O2-E6Z">
+                        <rect key="frame" x="12" y="241" width="31" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="0.25" id="rCp-al-vqU">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JAK-Zm-7xr">
+                        <rect key="frame" x="155" y="285" width="151" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" alignment="right" title="1.0 second(s)" id="N6g-a7-pSJ">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                        <connections>
+                            <binding destination="-2" name="displayPatternValue1" keyPath="self.updateFrequencyLabel" id="oOb-F1-u10">
+                                <dictionary key="options">
+                                    <string key="NSDisplayPattern">%{value1}@</string>
+                                </dictionary>
+                            </binding>
+                        </connections>
+                    </textField>
+                    <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="DNI-UH-mbI">
+                        <rect key="frame" x="283" y="238" width="23" height="17"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="5.0" id="dgT-sj-2B5">
+                            <font key="font" metaFont="system"/>
+                            <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                            <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                        </textFieldCell>
+                    </textField>
+                    <box fixedFrame="YES" title="Usage Graph Colors" translatesAutoresizingMaskIntoConstraints="NO" id="gDM-hc-c6V">
+                        <rect key="frame" x="11" y="16" width="303" height="161"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <view key="contentView" id="Bkd-lA-vlG">
+                            <rect key="frame" x="2" y="2" width="299" height="144"/>
+                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <subviews>
+                                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Asd-MC-5LL">
+                                    <rect key="frame" x="20" y="104" width="44" height="23"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <color key="color" name="systemOrangeColor" catalog="System" colorSpace="catalog"/>
+                                    <connections>
+                                        <action selector="updateColors:" target="-2" id="wKc-RJ-VX1"/>
+                                    </connections>
+                                </colorWell>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="wxW-mq-vRP">
+                                    <rect key="frame" x="77" y="107" width="74" height="17"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="CPU Usage" id="S0Y-ON-mHr">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="ehb-qY-MpA">
+                                    <rect key="frame" x="20" y="76" width="44" height="23"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <color key="color" name="systemBlueColor" catalog="System" colorSpace="catalog"/>
+                                    <connections>
+                                        <action selector="updateColors:" target="-2" id="Ihd-LS-pFU"/>
+                                    </connections>
+                                </colorWell>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="tAG-iQ-Y0t">
+                                    <rect key="frame" x="77" y="79" width="95" height="17"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Active Memory" id="MUl-z1-SXb">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KsO-lY-PdJ">
+                                    <rect key="frame" x="19" y="48" width="44" height="23"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <color key="color" name="systemYellowColor" catalog="System" colorSpace="catalog"/>
+                                    <connections>
+                                        <action selector="updateColors:" target="-2" id="kzs-IX-IkC"/>
+                                    </connections>
+                                </colorWell>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="oeg-sf-eYF">
+                                    <rect key="frame" x="77" y="51" width="134" height="17"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Compressed Memory" id="s3f-Xq-x4t">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                                <colorWell fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1wb-Jw-xh4">
+                                    <rect key="frame" x="20" y="20" width="44" height="23"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <color key="color" name="systemGreenColor" catalog="System" colorSpace="catalog"/>
+                                    <connections>
+                                        <action selector="updateColors:" target="-2" id="hhQ-Tv-aDR"/>
+                                    </connections>
+                                </colorWell>
+                                <textField horizontalHuggingPriority="251" verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="0fp-UZ-EuK">
+                                    <rect key="frame" x="77" y="23" width="93" height="17"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                    <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" sendsActionOnEndEditing="YES" title="Wired Memory" id="jc8-aa-afP">
+                                        <font key="font" metaFont="system"/>
+                                        <color key="textColor" name="labelColor" catalog="System" colorSpace="catalog"/>
+                                        <color key="backgroundColor" name="controlColor" catalog="System" colorSpace="catalog"/>
+                                    </textFieldCell>
+                                </textField>
+                            </subviews>
+                        </view>
+                    </box>
+                    <button verticalHuggingPriority="750" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Pxk-IT-PMT">
+                        <rect key="frame" x="18" y="194" width="200" height="18"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                        <buttonCell key="cell" type="check" title="Show menu bar meter outline" bezelStyle="regularSquare" imagePosition="left" state="on" inset="2" id="QRt-wS-ung">
+                            <behavior key="behavior" changeContents="YES" doesNotDimImage="YES" lightByContents="YES"/>
+                            <font key="font" metaFont="system"/>
+                        </buttonCell>
+                        <connections>
+                            <action selector="showOutlineCheckboxChecked:" target="-2" id="Vlc-GA-YsM"/>
+                        </connections>
+                    </button>
+                </subviews>
+            </view>
+            <connections>
+                <outlet property="delegate" destination="-2" id="0bl-1N-AYu"/>
+            </connections>
+            <point key="canvasLocation" x="140" y="345"/>
+        </window>
+    </objects>
+</document>
